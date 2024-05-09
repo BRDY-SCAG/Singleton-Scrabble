@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 
-    public class Singleton {
+    public class Singleton { //returns a single instance of this class. has methods like getting tiles and getting their letter board
 
         private static Singleton firstInstance = null;
 
@@ -31,7 +31,7 @@ import java.util.LinkedList;
         // down though
         // public static synchronized Singleton getInstance()
 
-        public static Singleton getInstance() {
+        public static Singleton getInstance() { // constructor for singleton class. checks instances
             if(firstInstance == null) {
 
                 // This is here to test what happens if threads try
@@ -75,13 +75,13 @@ import java.util.LinkedList;
             return firstInstance;
         }
 
-        public LinkedList<String> getLetterList(){
+        public LinkedList<String> getLetterList(){ //returns the entire list of letters
 
             return firstInstance.letterList;
 
         }
 
-        public LinkedList<String> getTiles(int howManyTiles){
+        public LinkedList<String> getTiles(int howManyTiles){ // updates players letters by returning tiles for the given players board.
 
             // Tiles to be returned to the user
 

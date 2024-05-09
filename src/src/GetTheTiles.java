@@ -1,8 +1,8 @@
 import java.util.LinkedList;
 
-public class GetTheTiles implements Runnable {
+public class GetTheTiles implements Runnable { // returns players scrabble boards and first 7 letters
 
-    public void run(){
+    public void run(){ // prints out the board and tiles the player is assigned to at start.
         // How you create a new instance of Singleton
         Singleton newInstance = Singleton.getInstance();
         // Get unique id for instance object
